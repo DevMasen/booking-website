@@ -2744,21 +2744,6 @@
             "rid": "win"
           }
         }
-      },
-      "EghaamatYaar.DataAccess/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.8",
-          "Microsoft.EntityFrameworkCore.Relational": "8.0.8",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
-        },
-        "compile": {
-          "bin/placeholder/EghaamatYaar.DataAccess.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/EghaamatYaar.DataAccess.dll": {}
-        }
       }
     }
   },
@@ -7722,16 +7707,10 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "EghaamatYaar.DataAccess/1.0.0": {
-      "type": "project",
-      "path": "../EghaamatYaar.DataAccess/EghaamatYaar.DataAccess.csproj",
-      "msbuildProject": "../EghaamatYaar.DataAccess/EghaamatYaar.DataAccess.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "EghaamatYaar.DataAccess >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Relational >= 8.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.8",
@@ -7740,19 +7719,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nima\\.nuget\\packages\\": {}
+    "C:\\Users\\mhow3\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\programming\\asp.net projects\\New folder\\EghaamatYaar\\EghaamatYaar.Web\\EghaamatYaar.Web.csproj",
+      "projectUniqueName": "G:\\Repositories\\DevMasen-repositories\\booking-website\\backend\\EghaamatYaar.Web\\EghaamatYaar.Web.csproj",
       "projectName": "EghaamatYaar.Web",
-      "projectPath": "F:\\programming\\asp.net projects\\New folder\\EghaamatYaar\\EghaamatYaar.Web\\EghaamatYaar.Web.csproj",
-      "packagesPath": "C:\\Users\\Nima\\.nuget\\packages\\",
-      "outputPath": "F:\\programming\\asp.net projects\\New folder\\EghaamatYaar\\EghaamatYaar.Web\\obj\\",
+      "projectPath": "G:\\Repositories\\DevMasen-repositories\\booking-website\\backend\\EghaamatYaar.Web\\EghaamatYaar.Web.csproj",
+      "packagesPath": "C:\\Users\\mhow3\\.nuget\\packages\\",
+      "outputPath": "G:\\Repositories\\DevMasen-repositories\\booking-website\\backend\\EghaamatYaar.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Nima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mhow3\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7766,11 +7745,7 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "F:\\programming\\asp.net projects\\New folder\\EghaamatYaar\\EghaamatYaar.DataAccess\\EghaamatYaar.DataAccess.csproj": {
-              "projectPath": "F:\\programming\\asp.net projects\\New folder\\EghaamatYaar\\EghaamatYaar.DataAccess\\EghaamatYaar.DataAccess.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -7830,7 +7805,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
