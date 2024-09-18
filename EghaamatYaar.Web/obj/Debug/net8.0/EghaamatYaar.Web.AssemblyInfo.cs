@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EghaamatYaar.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97d7c239863ad233df78f5823eb6bcd6c24c08d6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45607e40d6da03637c9f463f5925d670b6b03b12")]
 [assembly: System.Reflection.AssemblyProductAttribute("EghaamatYaar.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EghaamatYaar.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
