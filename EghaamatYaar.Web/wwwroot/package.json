@@ -1,0 +1,19 @@
+{
+  "name": "eghaamat-yaar",
+  "version": "1.0.0",
+  "description": "booking and residential website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap",
+    "jquery"
+  ],
+  "author": "DevMasen",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1"
+  }
+}
