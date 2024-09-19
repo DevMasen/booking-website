@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EghaamatYaar.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9b7f4d48bd9a5b6244b0b2c16259fc3ba470a2c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f6211201e621491d06a4c1bfcf16a6295cfc477")]
 [assembly: System.Reflection.AssemblyProductAttribute("EghaamatYaar.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EghaamatYaar.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
