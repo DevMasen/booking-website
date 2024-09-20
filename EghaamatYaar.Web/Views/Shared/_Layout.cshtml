@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta Tags -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Booking and Redidential Website" />
+		<meta name="robots" content="index, follow" />
+		<link rel="canonical" href="" />
+
+		<!-- Meta OG Tags -->
+		<meta property="og:title" content="Eghamat Yaar" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="" />
+		<meta
+			property="og:description"
+			content="Booking and Residential Website"
+		/>
+		<meta property="og:site_name" content="eghamatyaar" />
+		<meta property="og:locale" content="en_US" />
+
+		<title>Eghamat Yaar</title>
+
+		<!-- Favicon Tags -->
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="~/favicon/favicon.ico"
+			sizes="any"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="~/favicon/favicon-32x32.png"
+			sizes="32x32"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="~/favicon/favicon-16x16.png"
+			sizes="16x16"
+		/>
+		<link
+			rel="apple-touch-icon"
+			type="image/png"
+			href="~/favicon/apple-touch-icon.png"
+			sizes="180x180"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="~/favicon/android-chrome-192x192.png"
+			sizes="192x192"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="~/favicon/android-chrome-512x512.png"
+			sizes="512x512"
+		/>
+		<link rel="manifest" href="~/favicon/site.webmanifest" />
+
+		<link
+			rel="stylesheet"
+			href="~/css/site.css"
+			asp-append-version="true"
+		/>
+		<link
+			rel="stylesheet"
+			href="~/css/media.css"
+			asp-append-version="true"
+		/>
+		<script defer src="~/js/site.js" asp-append-version="true"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<div class="container-fluid">
+					<a
+						class="navbar-brand"
+						asp-area=""
+						asp-controller="Home"
+						asp-action="Index"
+						>WebApplication1
+						</a>
+					
+					<button
+						class="navbar-toggler"
+						type="button"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="navbar-collapse">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									asp-area=""
+									asp-controller="Home"
+									asp-action="Index"
+									>nima</a>
+								
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									asp-area=""
+									asp-controller="Home"
+									asp-action="Privacy"
+									>Privacy</a>
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="container">
+			<main role="main">
+				@RenderBody()
+			</main>
+		</div>
+
+		<footer>
+			<div class="container">
+				&copy; 2024 - WebApplication1 -
+				<a asp-area="" asp-controller="Home" asp-action="Privacy"
+					>Privacy</a>
+				
+			</div>
+		</footer>
+		@await RenderSectionAsync("Scripts", required: false)
+	</body>
+</html>
