@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 
-namespace Inamet.Web.Controllers
+namespace EghaamatYaar.Web.Controllers
 {
     public class HomeController : Controller
     {

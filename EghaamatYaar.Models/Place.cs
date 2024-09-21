@@ -13,7 +13,7 @@ namespace EghaamatYaar.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "لطفا استان را وارد کنید")]
-        public String ostaan {  get; set; }
+        public String area {  get; set; }
 
         public String city { get; set; }
 

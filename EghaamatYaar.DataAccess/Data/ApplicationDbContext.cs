@@ -1,4 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EghaamatYaar.Models;
+using EghaamatYaar.Models.Users;
+
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +18,8 @@ namespace EghaamatYaar.DataAccess.Data
 
         }
 
+        public DbSet<Place> Places { get; set; }
+        public DbSet<Admin> Admins { get; set; }
 
     }
 }
