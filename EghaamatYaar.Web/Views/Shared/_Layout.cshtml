@@ -1,26 +1,29 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="fa">
 	<head>
 		<!-- Meta Tags -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Booking and Redidential Website" />
+		<meta
+			name="description"
+			content="وبسایت رزرو محل اقامت با امکان جستجو و رزرو آنلاین اقامتگاه‌های مختلف در سراسر ایران، ارائه‌دهنده اطلاعات کامل و خدمات با کیفیت برای تجربه‌ای راحت و سریع."
+		/>
 		<meta name="robots" content="index, follow" />
 		<link rel="canonical" href="" />
 
 		<!-- Meta OG Tags -->
-		<meta property="og:title" content="Eghamat Yaar" />
+		<meta property="og:title" content="اقامت یار" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="" />
 		<meta property="og:image" content="" />
 		<meta
 			property="og:description"
-			content="Booking and Residential Website"
+			content="وبسایت رزرو محل اقامت با امکان جستجو و رزرو آنلاین اقامتگاه‌های مختلف در سراسر ایران، ارائه‌دهنده اطلاعات کامل و خدمات با کیفیت برای تجربه‌ای راحت و سریع."
 		/>
 		<meta property="og:site_name" content="eghamatyaar" />
-		<meta property="og:locale" content="en_US" />
+		<meta property="og:locale" content="fa_IR" />
 
-		<title>Eghamat Yaar</title>
+		<title>رزرو اقامتگاه و هتل در سراسر ایران | اقامت یار</title>
 
 		<!-- Favicon Tags -->
 		<link
@@ -59,11 +62,21 @@
 			href="~/favicon/android-chrome-512x512.png"
 			sizes="512x512"
 		/>
-		<link rel="manifest" href="~/favicon/site.webmanifest" />
+		<link rel="manifest" href="./favicon/site.webmanifest" />
 
 		<link
 			rel="stylesheet"
 			href="~/css/site.css"
+			asp-append-version="true"
+		/>
+		<link
+			rel="stylesheet"
+			href="~/css/normalize.css"
+			asp-append-version="true"
+		/>
+		<link
+			rel="stylesheet"
+			href="~/css/font.css"
 			asp-append-version="true"
 		/>
 		<link
@@ -75,49 +88,6 @@
 	</head>
 	<body>
 		<header>
-			<nav class="navbar">
-				<div class="container-fluid">
-					<a
-						class="navbar-brand"
-						asp-area=""
-						asp-controller="Home"
-						asp-action="Index"
-						>WebApplication1
-						</a>
-					
-					<button
-						class="navbar-toggler"
-						type="button"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="navbar-collapse">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									asp-area=""
-									asp-controller="Home"
-									asp-action="Index"
-									>Home</a>
-								
-							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									asp-area=""
-									asp-controller="Home"
-									asp-action="Privacy"
-									>Privacy</a>
-								
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
 		</header>
 		<div class="container">
 			<main role="main">
@@ -126,13 +96,21 @@
 		</div>
 
 		<footer>
-			<div class="container">
-				&copy; 2024 - WebApplication1 -
-				<a asp-area="" asp-controller="Home" asp-action="Privacy"
-					>Privacy</a>
-				
-			</div>
+			<div class="container"></div>
 		</footer>
 		@await RenderSectionAsync("Scripts", required: false)
 	</body>
 </html>
+
+<!-- tag <a> asp attributes -->
+<!-- asp-area=""
+asp-controller="Home"
+asp-action="Index"
+asp-area=""
+asp-controller="Home"
+asp-action="Privacy" -->
+
+<!-- tag button asp attributes -->
+<!-- aria-controls="navbarSupportedContent"
+aria-expanded="false"
+aria-label="Toggle navigation" -->
