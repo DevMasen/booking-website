@@ -13,33 +13,37 @@ namespace EghaamatYaar.Models.Users
         [Key]
         public int Id { get; set; }
 
+        [Required(ErrorMessage = "شناسه مدیر یک فیلد اجباریست")]
+        [DisplayName("شناسه مدیر")]
+        public String ownerCoed { get; set; }
+
         [Required(ErrorMessage = "نام یک فیلد اجباریست")]
         [DisplayName("نام")]
-        protected String firstName { get; set; }
+        public String firstName { get; set; }
 
         [Required(ErrorMessage = "نام خانوادگی یک فیلد اجباریست")]
         [DisplayName("نام خانوادگی")]
-        protected String lastName { get; set; }
+        public String lastName { get; set; }
 
         [Required(ErrorMessage = "نام کاربری یک فیلد اجباریست")]
         [DisplayName("نام کاربری")]
-        protected String userName { get; set; }
+        public String userName { get; set; }
 
         [Required(ErrorMessage = "رمز عبور یک فیلد اجباریست")]
         [DisplayName("رمز عبور")]
-        protected String password { get; set; }
+        public String password { get; set; }
 
         [Required(ErrorMessage = "کد ملی یک فیلد اجباریست")]
         [DisplayName("کد ملی")]
-        protected long nationalCode { get; set; }
+        public long nationalCode { get; set; }
 
         [Required(ErrorMessage = "تلفن همراه یک فیلد اجباریست")]
         [DisplayName("تلفن همراه")]
-        protected long phoeneNumber { get; set; }
+        public long phoeneNumber { get; set; }
 
-        protected DateTime creatDateTime { get; set; } = DateTime.Now;
-        protected DateTime lastUpdateTime { get; set; } = DateTime.Now;
-        public String ownerCoed {  get; set; }
+        public DateTime creatDateTime { get; set; } = DateTime.Now;
+        public DateTime lastUpdateTime { get; set; } = DateTime.Now;
+        
 
         IEnumerable<Admin> admins { get; set; }
     }
