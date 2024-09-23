@@ -1,4 +1,4 @@
-namespace EhaamatYaar.Models;
+namespace EghaamatYaar.Models.Other;
 
 public class ErrorViewModel
 {

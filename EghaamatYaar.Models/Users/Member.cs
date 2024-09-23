@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EghaamatYaar.Models.Place;
 
 namespace EghaamatYaar.Models.Users
 {
@@ -45,7 +46,7 @@ namespace EghaamatYaar.Models.Users
         [DisplayName("تاریخ تولد")]
         public DateTime birthDay { get; set; }
 
-        IEnumerable<Place> reserves { get; set; }
+        IEnumerable<HomeStay> reserves { get; set; }
 
 
     }

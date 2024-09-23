@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EghaamatYaar.Models.Place;
 
 namespace EghaamatYaar.Models.Users
 {
@@ -44,6 +45,6 @@ namespace EghaamatYaar.Models.Users
         public DateTime creatDateTime { get; set; } = DateTime.Now;
         public DateTime lastUpdateTime { get; set; } = DateTime.Now;
 
-        IEnumerable<Place> places { get; set; }
+        IEnumerable<HomeStay> places { get; set; }
     }
 }

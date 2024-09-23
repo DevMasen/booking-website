@@ -1,4 +1,4 @@
-﻿using EghaamatYaar.Models;
+﻿using EghaamatYaar.Models.Place;
 using EghaamatYaar.Models.Users;
 
 using Microsoft.EntityFrameworkCore;
@@ -18,7 +18,7 @@ namespace EghaamatYaar.DataAccess.Data
 
         }
 
-        public DbSet<Place> Places { get; set; }
+        public DbSet<HomeStay> HomeStayes { get; set; }
         public DbSet<Admin> Admins { get; set; }
 
     }

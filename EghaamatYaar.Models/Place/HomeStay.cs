@@ -6,24 +6,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EghaamatYaar.Models
+namespace EghaamatYaar.Models.Place
 {
-    public class Place
+    public class HomeStay
     {
         [Key]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "لطفا استان را وارد کنید")]
         [DisplayName("استان")]
-        public String county {  get; set; }
+        public string county { get; set; }
 
         [Required(ErrorMessage = "لطفا شهر را وارد کنید")]
         [DisplayName("شهر")]
-        public String city { get; set; }
+        public string city { get; set; }
 
         [Required(ErrorMessage = "لطفا ادرس اقامتگاه را وارد کنید")]
         [DisplayName("ادرس اقامتگاه")]
-        public String address { get; set; }
+        public string address { get; set; }
 
         [Required(ErrorMessage = "لطفا شماره پلاک اقامتگاه را وارد کنید")]
         [DisplayName("پلاک اقامتگاه")]
@@ -33,6 +33,6 @@ namespace EghaamatYaar.Models
         [DisplayName("قیمت روزانه اقامتگاه")]
         public int price { get; set; }
 
-        
+
     }
 }
