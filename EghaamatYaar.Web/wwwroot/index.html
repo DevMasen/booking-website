@@ -87,7 +87,131 @@
 		<script defer src="./js/site.js" asp-append-version="true"></script>
 	</head>
 	<body>
-		<header></header>
+		<header class="header">
+			<div class="header-top">
+				<div class="header-top_menu">
+					<button
+						class="menu-btn"
+						aria-controls=""
+						aria-expanded=""
+						aria-label=""
+					>
+						<img class="menu-btn_img" src="" alt="" />
+					</button>
+				</div>
+				<div class="header-top_logo">
+					<a
+						class="logo-link"
+						href="#"
+						asp-area=""
+						asp-controller=""
+						asp-action=""
+					>
+						<img class="logo-link_img" src="" alt="" />
+					</a>
+				</div>
+				<div class="header-top_links">
+					<a
+						class="links-account"
+						href="#"
+						asp-area=""
+						asp-controller=""
+						asp-action=""
+					>
+						<img class="links-account_icon" src="" alt="" />
+					</a>
+					<a
+						class="links-contact"
+						href="#"
+						asp-area=""
+						asp-controller=""
+						asp-action=""
+					>
+						<img class="links-contact_icon" src="" alt="" />
+					</a>
+				</div>
+			</div>
+			<nav class="nav">
+				<div class="nav_top">
+					<button
+						class="close-btn"
+						aria-controls=""
+						aria-expanded=""
+						aria-label=""
+					>
+						<img class="close-btn_img" src="" alt="" />
+					</button>
+					<h3 class="menu-title">منو</h3>
+				</div>
+				<ul class="nav-menu">
+					<li class="menu-item">
+						<a
+							class="menu-search-link"
+							href="#"
+							asp-area=""
+							asp-controller=""
+							asp-action=""
+						>
+							<img class="menu-item_icon" src="" alt="" />
+							<span class="menu-item_text"> جستجو </span>
+							<img class="menu-item_arrow" src="" alt="" />
+						</a>
+					</li>
+					<li class="menu-item">
+						<a
+							class="menu-account-link"
+							href="#"
+							asp-area=""
+							asp-controller=""
+							asp-action=""
+						>
+							<img class="menu-item_icon" src="" alt="" />
+							<span class="menu-item_text"> حساب کاربری </span>
+							<img class="menu-item_arrow" src="" alt="" />
+						</a>
+					</li>
+					<li class="menu-item">
+						<a
+							class="menu-reserve-link"
+							href="#"
+							asp-area=""
+							asp-controller=""
+							asp-action=""
+						>
+							<img class="menu-item_icon" src="" alt="" />
+							<span class="menu-item_text"> رزرو اقامتگاه </span>
+							<img class="menu-item_arrow" src="" alt="" />
+						</a>
+					</li>
+					<li class="menu-item">
+						<a
+							class="menu-aboutus-link"
+							href="#"
+							asp-area=""
+							asp-controller=""
+							asp-action=""
+						>
+							<img class="menu-item_icon" src="" alt="" />
+							<span class="menu-item_text"> درباره ما </span>
+							<img class="menu-item_arrow" src="" alt="" />
+						</a>
+					</li>
+					<li class="menu-item" class="menu-item">
+						<a
+							class="menu-contact-link"
+							href="#"
+							asp-area=""
+							asp-controller=""
+							asp-action=""
+						>
+							<img class="menu-item_icon" src="" alt="" />
+							<span class="menu-item_text"> تماس با ما </span>
+							<img class="menu-item_arrow" src="" alt="" />
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 		<div class="container">
 			<main role="main">
 				<!--@RenderBody()-->
@@ -100,16 +224,3 @@
 		<!--@await RenderSectionAsync("Scripts", required: false)-->
 	</body>
 </html>
-
-<!-- tag <a> asp attributes -->
-<!-- asp-area=""
-asp-controller="Home"
-asp-action="Index"
-asp-area=""
-asp-controller="Home"
-asp-action="Privacy" -->
-
-<!-- tag button asp attributes -->
-<!-- aria-controls="navbarSupportedContent"
-aria-expanded="false"
-aria-label="Toggle navigation" -->

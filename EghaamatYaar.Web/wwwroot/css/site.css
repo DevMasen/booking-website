@@ -1,36 +1,73 @@
 :root {
 	--color-fff: #fff;
 	--color-258cfb: #258cfb;
-	--color-16697a:#16697a;
-	--color-489fb5:#489fb5;
-	--color-82c0cc:#82c0cc;
-	--color-ede7e3:#ede7e3;
-	--color-ffa62b:#ffa62b; 
+	--color-16697a: #16697a;
+	--color-489fb5: #489fb5;
+	--color-82c0cc: #82c0cc;
+	--color-ede7e3: #ede7e3;
+	--color-ffa62b: #ffa62b;
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-} 
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
 
-/* .navbar {
+/* .header {
 }
-.container-fluid {
+.header-top {
 }
-.navbar-brand {
+.header-top_menu {
 }
-.navbar-toggler {
+.menu-btn {
 }
-.navbar-toggler-icon {
+.menu-btn_img {
 }
-.navbar-collapse {
+.header-top_logo {
 }
-.navbar-nav {
+.logo-link {
 }
-.nav-item {
+.logo-link_img {
 }
-.nav-link {
+.header-top_links {
 }
-*/
+.links-account {
+}
+.links-account_icon {
+}
+.links-contact {
+}
+.links-contact_icon {
+}
+.nav {
+}
+.nav_top {
+}
+.close-btn {
+}
+.close-btn_img {
+}
+.menu-title {
+}
+.nav-menu {
+}
+.menu-item {
+}
+.menu-search-link {
+}
+.menu-item_icon {
+}
+.menu-item_text {
+}
+.menu-item_arrow {
+}
+.menu-account-link {
+}
+.menu-reserve-link {
+}
+.menu-aboutus-link {
+}
+.menu-contact-link {
+} */
