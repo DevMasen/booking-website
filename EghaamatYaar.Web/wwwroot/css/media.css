@@ -6,9 +6,6 @@
 
 @media (min-width: 768px) {
 	/* Styles for small to medium screens */
-	html {
-		font-size: 16px;
-	}
     .container {
         max-width: 720px;
       }
@@ -23,7 +20,4 @@
 
 @media (min-width: 1200px) {
 	/* Styles for small laptops */
-	html {
-		font-size: 18px;
-	}
 }
