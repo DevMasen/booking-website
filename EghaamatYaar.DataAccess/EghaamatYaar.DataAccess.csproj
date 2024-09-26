@@ -20,4 +20,8 @@
     <ProjectReference Include="..\EghaamatYaar.Models\EghaamatYaar.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DataBase\" />
+  </ItemGroup>
+
 </Project>
