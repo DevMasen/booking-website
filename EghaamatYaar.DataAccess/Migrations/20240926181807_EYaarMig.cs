@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -16,7 +17,15 @@ namespace EghaamatYaar.DataAccess.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    adminCode = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    adminCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    firstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    lastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    userName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    nationalCode = table.Column<long>(type: "bigint", nullable: false),
+                    phoeneNumber = table.Column<long>(type: "bigint", nullable: false),
+                    creatDateTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    lastUpdateTime = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -24,12 +33,12 @@ namespace EghaamatYaar.DataAccess.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Places",
+                name: "homeStays",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    area = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    county = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     city = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     address = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     houseNumber = table.Column<int>(type: "int", nullable: false),
@@ -37,7 +46,7 @@ namespace EghaamatYaar.DataAccess.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Places", x => x.Id);
+                    table.PrimaryKey("PK_homeStays", x => x.Id);
                 });
         }
 
@@ -48,7 +57,7 @@ namespace EghaamatYaar.DataAccess.Migrations
                 name: "Admins");
 
             migrationBuilder.DropTable(
-                name: "Places");
+                name: "homeStays");
         }
     }
 }
