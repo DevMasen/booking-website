@@ -275,3 +275,4 @@ __pycache__/
 
 # DevMasen Added
 package-lock.json
+.prettierrc
