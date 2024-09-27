@@ -53,3 +53,10 @@
     src: url("../fonts/Mikhak-FD-ExtraBold.ttf") format(truetype);
     font-display: block;
 }
+
+/* font isfahan */
+@font-face {
+    font-family: "isfahan";
+    src: url("../fonts/Isfahan.ttf") format(truetype);
+    font-display: block;
+}
