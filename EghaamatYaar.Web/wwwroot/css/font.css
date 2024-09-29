@@ -20,40 +20,39 @@
 @font-face {
     font-family: "mikhak";
     font-weight: 400;
-    src: url("../fonts/Mikhak-FD-Medium.ttf") format(truetype);
-    font-display: block;
-}
-@font-face {
-    font-family: "mikhak";
-    font-weight: 500;
     src: url("../fonts/Mikhak-FD-Regular.ttf") format(truetype);
     font-display: block;
 }
 @font-face {
     font-family: "mikhak";
-    font-weight: 600;
-    src: url("../fonts/Mikhak-FD-Black.ttf") format(truetype);
+    font-weight: 500;
+    src: url("../fonts/Mikhak-FD-Medium.ttf") format(truetype);
     font-display: block;
 }
 @font-face {
     font-family: "mikhak";
-    font-weight: 700;
+    font-weight: 600;
     src: url("../fonts/Mikhak-FD-SemiBold.ttf") format(truetype);
     font-display: block;
 }
 @font-face {
     font-family: "mikhak";
-    font-weight: 800;
+    font-weight: 700;
     src: url("../fonts/Mikhak-FD-Bold.ttf") format(truetype);
     font-display: block;
 }
 @font-face {
     font-family: "mikhak";
-    font-weight: 900;
+    font-weight: 800;
     src: url("../fonts/Mikhak-FD-ExtraBold.ttf") format(truetype);
     font-display: block;
 }
-
+@font-face {
+    font-family: "mikhak";
+    font-weight: 900;
+    src: url("../fonts/Mikhak-FD-Black.ttf") format(truetype);
+    font-display: block;
+}
 /* font isfahan */
 @font-face {
     font-family: "isfahan";
