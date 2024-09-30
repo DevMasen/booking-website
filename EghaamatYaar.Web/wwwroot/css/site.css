@@ -26,6 +26,9 @@ html {
 }
 
 body {
+  background-image: url('../img/SexyBackground.png');
+  background-attachment: fixed;
+  background-position: center;
   -webkit-tap-highlight-color: transparent;
   /* height: 90rem; */
 }
