@@ -63,11 +63,10 @@ a:hover {
 }
 
 /* ! Header */
-.header {
-  margin-top: 0.5rem;
-}
+/* .header {} */
 .header-top {
-  padding: 0 0.5rem;
+  background-color: var(--color-258cfb);
+  padding: 0.5rem 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -80,6 +79,7 @@ a:hover {
   width: 2rem;
   height: 2rem;
   position: relative;
+  cursor: pointer;
 }
 .menu-btn_img {
   width: 100%;
@@ -109,8 +109,10 @@ a:hover {
 .links-account,
 .links-contact {
   display: block;
+  background-color: var(--color-fff);
   width: 2rem;
   height: 2rem;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 .links-account_icon,
@@ -143,6 +145,7 @@ a:hover {
   all: unset;
   width: 2rem;
   height: 2rem;
+  cursor: pointer;
 }
 .close-btn_img {
   width: 100%;
@@ -183,12 +186,18 @@ a:hover {
 /* ! Footer */
 .footer > div {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-areas: 'f1' 'f2' 'f3' 'f4' 'f5' 'f6';
 }
 /* .footer > div > div {
-  border: 2px solid #000;
+  border: 1px solid #000;
 } */
-/* .footer-overal {} */
+.footer h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.footer-overal {
+  grid-area: f1;
+}
 .footer-overal_logo {
   line-height: 0.5rem;
   display: flex;
@@ -217,14 +226,10 @@ a:hover {
   margin-top: 1rem;
   padding: 1rem;
 }
-.footer-overal_text h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
 .footer-overal_text p {
   margin-top: 0.5rem;
   font-weight: 500;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
   color: var(--color-222);
 }
 .footer-overal_text address {
@@ -234,9 +239,11 @@ a:hover {
   flex-direction: column;
 }
 .footer-social {
+  padding: 1rem 0;
   display: flex;
   justify-content: center;
   gap: 1rem;
+  grid-area: f2;
 }
 .social {
   width: 2rem;
@@ -258,8 +265,12 @@ a:hover {
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  grid-area: f3;
 }
-/* .newsletter-title{} */
+.footer-newsletter h4 {
+  font-weight: 500;
+  line-height: 1.5rem;
+}
 .newsletter-email {
   width: 80%;
   padding: 5px;
@@ -270,12 +281,12 @@ a:hover {
   align-self: center;
   border-radius: 0.5rem;
 }
-.newsletter-email_input{
+.newsletter-email input {
   all: unset;
   width: 100%;
   padding: 0.5rem;
 }
-.newsletter-email_btn{
+.newsletter-email button {
   all: unset;
   padding: 0.5rem;
   font-weight: 500;
@@ -294,35 +305,49 @@ a:hover {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  grid-area: f4;
 }
 .neshan {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid var(--color-ccc);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 .neshan-link {
   display: block;
   width: 100%;
 }
-.neshan-link_img {
+.neshan-link img {
   width: 100%;
 }
+/* .social-marketing{} */
 /* .enemad{} */
 /* .samandehi{} */
-/* .social-marketing{} */
-.footer-menu, .footer-useful{
+
+.footer-links {
+  border-top: 2px solid var(--color-ccc);
+  display: flex;
+  flex-direction: column;
+  grid-area: f5;
+}
+.footer-menu,
+.footer-useful {
   padding: 1rem;
 }
-.footer-menu h3, .footer-useful h3{
-  font-size: 1.5rem;
-  font-weight: 600;
-}
 /* .footer-menu_list{} */
-.footer-menu_item, .footer-useful_item{
+.footer-menu_item,
+.footer-useful_item {
   padding: 0.5rem 1.5rem;
 }
-.footer-menu_item_link, .footer-useful_item_link{
-  text-decoration: underline;
+.footer-menu_item a,
+.footer-useful_item a {
   font-weight: 500;
+  color: var(--color-666);
 }
 /* .footer-useful_list{} */
-/* .footer-copy{} */
+.footer-copy {
+  padding: 0.5rem;
+  border-top: 2px solid var(--color-ccc);
+  grid-area: f6;
+}

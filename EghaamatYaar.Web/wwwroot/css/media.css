@@ -2,6 +2,16 @@
   .container {
     max-width: 540px;
   }
+  .footer > div {
+    grid-template-areas: 'f1 f3' 'f1 f4' 'f2 f4' 'f5 f5' 'f6 f6';
+  }
+  .newsletter-email {
+    width: 100%;
+  }
+  .footer-links {
+    flex-direction: row;
+    gap: 8rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -42,9 +52,27 @@
     border: none;
   }
   .menu-item > a {
-    font-size: 18px;
+    font-size: 1.2rem;
     cursor: pointer;
   }
+  .menu-item_text {
+    color: var(--color-fff);
+    position: relative;
+    &:hover::after {
+      width: 100%;
+    }
+  }
+  .menu-item_text::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--color-fff);
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: all 200ms ease-in;
+  }
+
   /* .header-top_links {} */
 }
 
@@ -53,23 +81,47 @@
   .container {
     max-width: 960px;
   }
+  .footer h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .footer-overal_text p,
+  .footer-overal_text address {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .social {
+    width: 3rem;
+    height: 3rem;
+  }
+  .footer-newsletter h4 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .newsletter-sms {
+    font-size: 1.2rem;
+  }
+  .footer-menu_item a,
+  .footer-useful_item a {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 1200px) {
   /* Styles for small laptops */
   .logo-link {
-    width: 86px;
+    width: 5rem;
   }
   .nav-menu {
-    gap: 32px;
+    gap: 2rem;
   }
   .menu-item > a {
-    font-size: 26px;
+    font-size: 1.5rem;
     cursor: pointer;
   }
   .links-account,
   .links-contact {
-    width: 48px;
-    height: 48px;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
