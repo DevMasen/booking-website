@@ -1,0 +1,122 @@
+/* !Temporary Color Variables */
+:root {
+  --color-000: #000;
+  --color-222: #222;
+  --color-444: #444;
+  --color-666: #666;
+  --color-888: #888;
+  --color-aaa: #aaa;
+  --color-ccc: #ccc;
+  --color-eee: #eee;
+  --color-fff: #fff;
+  --color-258cfb: #258cfb;
+  --color-16697a: #16697a;
+  --color-489fb5: #489fb5;
+  --color-82c0cc: #82c0cc;
+  --color-ede7e3: #ede7e3;
+  --color-ffa62b: #ffa62b;
+  --color-ff0000: #ff0000;
+}
+
+html {
+  font-family: 'mikhak';
+}
+
+body {
+  background-image: url('../img/SexyBackground.png');
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.signup-container {
+  width: 100%;
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.signup-fieldset {
+  background-color: var(--color-82c0cc);
+
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+}
+.signup-legend {
+  background-color: inherit;
+  color: var(--color-444);
+
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+/* .signup-field{} */
+.signup-input {
+  position: relative;
+}
+.signup-input label {
+  color: var(--color-666);
+
+  font-weight: 500;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+}
+.signup-input input {
+  background-color: var(--color-eee);
+
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.error-box {
+  color: var(--color-ff0000);
+
+  font-weight: 500;
+
+  padding: 1rem;
+}
+/* .error-message{} */
+.signup-btn {
+  all: unset;
+  background-color: var(--color-258cfb);
+  color: var(--color-fff);
+
+  font-weight: 500;
+  text-align: center;
+
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+/* .login{} */
+.login-link {
+  background-color: var(--color-ffa62b);
+  color: var(--color-fff);
+
+  font-weight: 500;
+  text-align: center;
+
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
