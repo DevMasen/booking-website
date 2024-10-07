@@ -14,9 +14,8 @@ namespace EghaamatYaar.Models.Users
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "شناسه ادمین یک فیلد اجباریست")]
         [DisplayName("شناسه ادمین")]
-        public String adminCode {  get; set; }
+        public String? adminCode {  get; set; }
 
         [Required(ErrorMessage = "نام یک فیلد اجباریست")]
         [DisplayName("نام")]

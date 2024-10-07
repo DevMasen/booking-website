@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EghaamatYaar.DataAccess.CodeBuilder
 {
-    public   class AdminCodeBuilder
+    public class AdminCodeBuilder
     {
 
         public static String build()
