@@ -1,14 +1,12 @@
 ﻿@using EghaamatYaar.Models.Users
-
+<!-- separator -->
 @model Admin
 <!--for ignoring members header and footer-->
-@{
-    Layout = null;
-}
+@{ Layout = null; }
 
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
-<head>
+  <head>
     <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,138 +14,201 @@
     <title>ثبت نام ادمین | اقامت یار</title>
 
     <!-- Favicon Tags -->
-    <link rel="icon"
-          type="image/x-icon"
-          href="../favicon/favicon.ico"
-          sizes="any" />
-    <link rel="icon"
-          type="image/png"
-          href="../favicon/favicon-32x32.png"
-          sizes="32x32" />
-    <link rel="icon"
-          type="image/png"
-          href="../favicon/favicon-16x16.png"
-          sizes="16x16" />
-    <link rel="apple-touch-icon"
-          type="image/png"
-          href="../favicon/apple-touch-icon.png"
-          sizes="180x180" />
-    <link rel="icon"
-          type="image/png"
-          href="../favicon/android-chrome-192x192.png"
-          sizes="192x192" />
-    <link rel="icon"
-          type="image/png"
-          href="../favicon/android-chrome-512x512.png"
-          sizes="512x512" />
-    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="~/favicon/favicon.ico"
+      sizes="any"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="~/favicon/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="~/favicon/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="~/favicon/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="~/favicon/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="~/favicon/android-chrome-512x512.png"
+      sizes="512x512"
+    />
+    <link rel="manifest" href="~/favicon/site.webmanifest" />
 
     <!-- Stylesheet -->
-    <link rel="stylesheet"
-          href="../css/normalize.css"
-          asp-append-version="true" />
-    <link rel="stylesheet"
-          href="../css/variables.css"
-          asp-append-version="true" />
-    <link rel="stylesheet" href="../css/font.css" asp-append-version="true" />
-    <link rel="stylesheet"
-          href="../css/adminSignupStyels.css"
-          asp-append-version="true" />
-    <link rel="stylesheet"
-          href="../css/adminSignupMedia.css"
-          asp-append-version="true" />
+    <link
+      rel="stylesheet"
+      href="~/css/normalize.css"
+      asp-append-version="true"
+    />
+    <link
+      rel="stylesheet"
+      href="~/css/variables.css"
+      asp-append-version="true"
+    />
+    <link rel="stylesheet" href="~/css/font.css" asp-append-version="true" />
+    <link
+      rel="stylesheet"
+      href="~/css/adminSignupStyels.css"
+      asp-append-version="true"
+    />
+    <link
+      rel="stylesheet"
+      href="~/css/adminSignupMedia.css"
+      asp-append-version="true"
+    />
     <!-- External JavaScript -->
-    <script src="../js/adminSignup.js" defer></script>
-</head>
-<body>
+    <script src="~/js/adminSignup.js" defer></script>
+  </head>
+  <body>
     <div class="signup-container">
-        <fieldset class="signup-fieldset">
-            <div class="singnup-input"></div>
-            <legend class="signup-legend">ثبت نام ادمین</legend>
-            <form class="signup-form" asp-controller="Admin" asp-action="AddAdmin">
-                <div class="signup-field">
-                    <div class="signup-input">
-                        <label for="first-name"> نام </label>
-                        <input asp-for="@Model.firstName" type="text" id="first-name" maxlength="32" />
-                    </div>
-                    <div class="error-box">
-                        <p>
-                            * خطا :
-                            <span asp-validation-for="@Model.firstName" class="error-message"></span>
-                        </p>
-                    </div>
-                </div>
+      <fieldset class="signup-fieldset">
+        <div class="singnup-input"></div>
+        <legend class="signup-legend">ثبت نام ادمین</legend>
+        <form class="signup-form" asp-controller="Admin" asp-action="AddAdmin">
+          <div class="signup-field">
+            <div class="signup-input">
+              <label for="first-name"> نام </label>
+              <input
+                asp-for="@Model.firstName"
+                type="text"
+                id="first-name"
+                maxlength="32"
+              />
+            </div>
+            <div class="error-box">
+              <p>
+                * خطا :
+                <span
+                  asp-validation-for="@Model.firstName"
+                  class="error-message"
+                ></span>
+              </p>
+            </div>
+          </div>
 
-                <div class="signup-field">
-                    <div class="signup-input">
-                        <label for="last-name"> نام خانوادگی </label>
-                        <input asp-for="@Model.lastName" type="text" id="last-name" maxlength="32" />
-                    </div>
-                    <div class="error-box">
-                        <p>
-                            * خطا :
-                            <span asp-validation-for="@Model.lastName" class="error-message"></span>
-                        </p>
-                    </div>
-                </div>
+          <div class="signup-field">
+            <div class="signup-input">
+              <label for="last-name"> نام خانوادگی </label>
+              <input
+                asp-for="@Model.lastName"
+                type="text"
+                id="last-name"
+                maxlength="32"
+              />
+            </div>
+            <div class="error-box">
+              <p>
+                * خطا :
+                <span
+                  asp-validation-for="@Model.lastName"
+                  class="error-message"
+                ></span>
+              </p>
+            </div>
+          </div>
 
-                <div class="signup-field">
-                    <div class="signup-input">
-                        <label for="user-name"> نام کاربری </label>
-                        <input asp-for="@Model.userName" type="text" id="user-name" />
-                    </div>
-                    <div class="error-box">
-                        <p>
-                            * خطا :
-                            <span asp-validation-for="@Model.userName" class="error-message"></span>
-                        </p>
-                    </div>
-                </div>
+          <div class="signup-field">
+            <div class="signup-input">
+              <label for="user-name"> نام کاربری </label>
+              <input asp-for="@Model.userName" type="text" id="user-name" />
+            </div>
+            <div class="error-box">
+              <p>
+                * خطا :
+                <span
+                  asp-validation-for="@Model.userName"
+                  class="error-message"
+                ></span>
+              </p>
+            </div>
+          </div>
 
-                <div class="signup-field">
-                    <div class="signup-input">
-                        <label for="password"> رمز عبور </label>
-                        <input asp-for="@Model.password" type="password" id="password" maxlength="20" />
-                    </div>
-                    <div class="error-box">
-                        <p>
-                            * خطا :
-                            <span asp-validation-for="@Model.password" class="error-message"></span>
-                        </p>
-                    </div>
-                </div>
+          <div class="signup-field">
+            <div class="signup-input">
+              <label for="password"> رمز عبور </label>
+              <input
+                asp-for="@Model.password"
+                type="password"
+                id="password"
+                maxlength="20"
+              />
+            </div>
+            <div class="error-box">
+              <p>
+                * خطا :
+                <span
+                  asp-validation-for="@Model.password"
+                  class="error-message"
+                ></span>
+              </p>
+            </div>
+          </div>
 
-                <div class="signup-field">
-                    <div class="signup-input">
-                        <label for="national-id"> کد ملی </label>
-                        <input asp-for="@Model.nationalCode" type="number" id="national-id" maxlength="10" />
-                    </div>
-                    <div class="error-box">
-                        <p>
-                            * خطا :
-                            <span asp-validation-for="@Model.nationalCode" class="error-message"></span>
-                        </p>
-                    </div>
-                </div>
+          <div class="signup-field">
+            <div class="signup-input">
+              <label for="national-id"> کد ملی </label>
+              <input
+                asp-for="@Model.nationalCode"
+                type="number"
+                id="national-id"
+                maxlength="10"
+              />
+            </div>
+            <div class="error-box">
+              <p>
+                * خطا :
+                <span
+                  asp-validation-for="@Model.nationalCode"
+                  class="error-message"
+                ></span>
+              </p>
+            </div>
+          </div>
 
-                <div class="signup-field">
-                    <div class="signup-input">
-                        <label for="phone-number"> تلفن همراه </label>
-                        <input asp-for="@Model.phoeneNumber" type="tel" id="phone-number" maxlength="11" />
-                    </div>
-                    <div class="error-box">
-                        <p>
-                            * خطا :
-                            <span asp-validation-for="@Model.phoeneNumber" class="error-message"></span>
-                        </p>
-                    </div>
-                </div>
-                <button class="signup-btn" type="submit">ثبت نام</button>
-                <div class="login">
-                    <a class="login-link" href="#"> ورود </a>
-                </div>
-            </form>
-        </fieldset>
+          <div class="signup-field">
+            <div class="signup-input">
+              <label for="phone-number"> تلفن همراه </label>
+              <input
+                asp-for="@Model.phoeneNumber"
+                type="tel"
+                id="phone-number"
+                maxlength="11"
+              />
+            </div>
+            <div class="error-box">
+              <p>
+                * خطا :
+                <span
+                  asp-validation-for="@Model.phoeneNumber"
+                  class="error-message"
+                ></span>
+              </p>
+            </div>
+          </div>
+          <button class="signup-btn" type="submit">ثبت نام</button>
+          <div class="login">
+            <a class="login-link" href="#"> ورود </a>
+          </div>
+        </form>
+      </fieldset>
     </div>
-</body>
+  </body>
 </html>
