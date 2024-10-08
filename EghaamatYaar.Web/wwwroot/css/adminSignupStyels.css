@@ -34,8 +34,9 @@ body {
 }
 
 .signup-container {
-  width: 100%;
+  margin: 5rem 0;
   padding: 2rem;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -43,7 +44,7 @@ body {
 }
 .signup-fieldset {
   background-color: var(--color-82c0cc);
-
+  width: 100%;
   padding: 2rem;
   border: none;
   border-radius: 1rem;
@@ -68,7 +69,7 @@ body {
 .signup-input {
   position: relative;
 }
-.signup-input label {
+.signup-input_label {
   color: var(--color-666);
 
   font-weight: 500;
@@ -77,14 +78,32 @@ body {
   top: 50%;
   transform: translateY(-50%);
   right: 1rem;
+  transition: all 200ms;
 }
-.signup-input input {
+.signup-input_input {
   background-color: var(--color-eee);
 
   width: 100%;
   padding: 0.8rem;
-  border: none;
+  border: 2px solid var(--color-eee);
   border-radius: 0.5rem;
+  transition: all 100ms ease-in;
+}
+
+.signup-input_input:focus + label,
+.signup-input_input:valid + label {
+  background-color: var(--color-eee);
+  color: var(--color-000);
+  top: 0;
+  font-size: larger;
+  padding: 0 0.5rem;
+  border-top: 2px solid var(--color-258cfb);
+  border-radius: 1rem;
+}
+
+.signup-input_input:focus {
+  border-color: var(--color-258cfb);
+  outline: none;
 }
 
 .error-box {

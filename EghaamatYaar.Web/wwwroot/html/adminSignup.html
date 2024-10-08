@@ -85,15 +85,17 @@
         <form class="signup-form" asp-controller="Admin" asp-action="AddAdmin">
           <div class="signup-field">
             <div class="signup-input">
-              <label for="first-name"> نام </label>
               <input
+                class="signup-input_input"
                 asp-for="@Model.firstName"
                 type="text"
                 id="first-name"
                 maxlength="32"
+                required
               />
+              <label class="signup-input_label" for="first-name"> نام </label>
             </div>
-            <div class="error-box">
+            <div class="error-box hidden">
               <p>
                 * خطا :
                 <span
@@ -106,15 +108,19 @@
 
           <div class="signup-field">
             <div class="signup-input">
-              <label for="last-name"> نام خانوادگی </label>
               <input
+                class="signup-input_input"
                 asp-for="@Model.lastName"
                 type="text"
                 id="last-name"
                 maxlength="32"
+                required
               />
+              <label class="signup-input_label" for="last-name">
+                نام خانوادگی
+              </label>
             </div>
-            <div class="error-box">
+            <div class="error-box hidden">
               <p>
                 * خطا :
                 <span
@@ -127,10 +133,19 @@
 
           <div class="signup-field">
             <div class="signup-input">
-              <label for="user-name"> نام کاربری </label>
-              <input asp-for="@Model.userName" type="text" id="user-name" />
+              <input
+                class="signup-input_input"
+                asp-for="@Model.userName"
+                type="text"
+                id="user-name"
+                required
+              />
+
+              <label class="signup-input_label" for="user-name">
+                نام کاربری
+              </label>
             </div>
-            <div class="error-box">
+            <div class="error-box hidden">
               <p>
                 * خطا :
                 <span
@@ -143,15 +158,19 @@
 
           <div class="signup-field">
             <div class="signup-input">
-              <label for="password"> رمز عبور </label>
               <input
+                class="signup-input_input"
                 asp-for="@Model.password"
                 type="password"
                 id="password"
                 maxlength="20"
+                required
               />
+              <label class="signup-input_label" for="password">
+                رمز عبور
+              </label>
             </div>
-            <div class="error-box">
+            <div class="error-box hidden">
               <p>
                 * خطا :
                 <span
@@ -164,15 +183,19 @@
 
           <div class="signup-field">
             <div class="signup-input">
-              <label for="national-id"> کد ملی </label>
               <input
+                class="signup-input_input"
                 asp-for="@Model.nationalCode"
                 type="number"
                 id="national-id"
                 maxlength="10"
+                required
               />
+              <label class="signup-input_label" for="national-id">
+                کد ملی
+              </label>
             </div>
-            <div class="error-box">
+            <div class="error-box hidden">
               <p>
                 * خطا :
                 <span
@@ -185,15 +208,19 @@
 
           <div class="signup-field">
             <div class="signup-input">
-              <label for="phone-number"> تلفن همراه </label>
               <input
+                class="signup-input_input"
                 asp-for="@Model.phoeneNumber"
                 type="tel"
                 id="phone-number"
                 maxlength="11"
+                required
               />
+              <label class="signup-input_label" for="phone-number">
+                تلفن همراه
+              </label>
             </div>
-            <div class="error-box">
+            <div class="error-box hidden">
               <p>
                 * خطا :
                 <span
