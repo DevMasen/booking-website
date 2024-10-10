@@ -91,7 +91,6 @@
                 type="text"
                 id="first-name"
                 maxlength="32"
-                required
               />
               <label class="signup-input_label" for="first-name"> نام </label>
             </div>
@@ -114,7 +113,6 @@
                 type="text"
                 id="last-name"
                 maxlength="32"
-                required
               />
               <label class="signup-input_label" for="last-name">
                 نام خانوادگی
@@ -138,7 +136,6 @@
                 asp-for="@Model.userName"
                 type="text"
                 id="user-name"
-                required
               />
 
               <label class="signup-input_label" for="user-name">
@@ -164,11 +161,13 @@
                 type="password"
                 id="password"
                 maxlength="20"
-                required
               />
               <label class="signup-input_label" for="password">
                 رمز عبور
               </label>
+              <button class="hide-btn">
+                <img src="../icons/hide.png" alt="hide/show" />
+              </button>
             </div>
             <div class="error-box hidden">
               <p>
@@ -189,7 +188,6 @@
                 type="text"
                 id="national-id"
                 maxlength="10"
-                required
               />
               <label class="signup-input_label" for="national-id">
                 کد ملی
@@ -214,7 +212,6 @@
                 type="tel"
                 id="phone-number"
                 maxlength="11"
-                required
               />
               <label class="signup-input_label" for="phone-number">
                 تلفن همراه

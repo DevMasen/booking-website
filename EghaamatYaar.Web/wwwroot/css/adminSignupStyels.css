@@ -92,6 +92,21 @@ body {
   transition: all 100ms ease-in;
 }
 
+.hide-btn {
+  all: unset;
+  width: 1.5rem;
+  height: 50%;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.hide-btn img {
+  width: 100%;
+  height: 100%;
+}
+
 .input-focus-fill {
   background-color: var(--color-eee);
   color: var(--color-000);
