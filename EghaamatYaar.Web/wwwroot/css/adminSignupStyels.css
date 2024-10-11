@@ -29,11 +29,9 @@ body {
 .signup-legend {
   background-color: inherit;
   color: var(--color-444);
-
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
-
   padding: 1rem;
   border-radius: 2rem;
 }
@@ -47,9 +45,7 @@ body {
 }
 .signup-input_label {
   color: var(--color-666);
-
   font-weight: 500;
-
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -58,12 +54,24 @@ body {
 }
 .signup-input_input {
   background-color: var(--color-eee);
-
   width: 100%;
   padding: 0.8rem;
   border: 2px solid var(--color-eee);
   border-radius: 0.5rem;
   transition: all 100ms ease-in;
+}
+.signup-input_input:focus {
+  border-color: var(--color-258cfb);
+  outline: none;
+}
+.input-focus-fill {
+  background-color: var(--color-eee);
+  color: var(--color-000);
+  top: 0;
+  font-size: larger;
+  padding: 0 0.5rem;
+  border-top: 2px solid var(--color-258cfb);
+  border-radius: 1rem;
 }
 .hide-btn {
   all: unset;
@@ -79,34 +87,17 @@ body {
   width: 100%;
   height: 100%;
 }
-.input-focus-fill {
-  background-color: var(--color-eee);
-  color: var(--color-000);
-  top: 0;
-  font-size: larger;
-  padding: 0 0.5rem;
-  border-top: 2px solid var(--color-258cfb);
-  border-radius: 1rem;
-}
-.signup-input_input:focus {
-  border-color: var(--color-258cfb);
-  outline: none;
-}
 .error-box {
   color: var(--color-ff0000);
-
   font-weight: 500;
-
   padding: 1rem;
 }
 .signup-btn {
   all: unset;
   background-color: var(--color-258cfb);
   color: var(--color-fff);
-
   font-weight: 500;
   text-align: center;
-
   padding: 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -118,10 +109,8 @@ body {
 .login-link {
   background-color: var(--color-ffa62b);
   color: var(--color-fff);
-
   font-weight: 500;
   text-align: center;
-
   display: block;
   width: 100%;
   padding: 1rem;
