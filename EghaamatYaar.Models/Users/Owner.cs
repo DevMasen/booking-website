@@ -15,7 +15,7 @@ namespace EghaamatYaar.Models.Users
 
         [Required(ErrorMessage = "شناسه مدیر یک فیلد اجباریست")]
         [DisplayName("شناسه مدیر")]
-        public String ownerCoed { get; set; }
+        public String ownerCode { get; set; }
 
         [Required(ErrorMessage = "نام یک فیلد اجباریست")]
         [DisplayName("نام")]

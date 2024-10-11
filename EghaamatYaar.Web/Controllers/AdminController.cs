@@ -22,7 +22,16 @@ namespace EghaamatYaar.Web.Controllers
         {
             if (newAdmin != null)
             {
-                String code = AdminCodeBuilder.build();
+                bool isValid = false;
+                String code;
+                ValidationCode validation = new ValidationCode(_Context);
+                do
+                {
+                    code = AdminCodeBuilder.build();
+                    isValid = validation.isValid(code , 0);
+
+                } while (isValid);
+
                 newAdmin.adminCode = code;
 
                 _Context.Admins.Add(newAdmin);
@@ -43,5 +52,7 @@ namespace EghaamatYaar.Web.Controllers
         {
             return View();
         }
+
+
     }
 }

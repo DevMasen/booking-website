@@ -11,6 +11,7 @@ namespace EghaamatYaar.DataAccess.CodeBuilder
 
         public static String build()
         {
+
             String alphabet = "mnopqrst";
             String numbers = "0123456789";
 
@@ -18,6 +19,7 @@ namespace EghaamatYaar.DataAccess.CodeBuilder
             int tempNum;
             int tempAorN;
             Random rnd = new Random();
+
 
             for (int i = 0; i < 7; i++)
             {
