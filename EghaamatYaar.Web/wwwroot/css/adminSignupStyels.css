@@ -1,40 +1,15 @@
-/* !Temporary Color Variables */
-:root {
-  --color-000: #000;
-  --color-222: #222;
-  --color-444: #444;
-  --color-666: #666;
-  --color-888: #888;
-  --color-aaa: #aaa;
-  --color-ccc: #ccc;
-  --color-eee: #eee;
-  --color-fff: #fff;
-  --color-258cfb: #258cfb;
-  --color-007bfe: #007bfe;
-  --color-16697a: #16697a;
-  --color-489fb5: #489fb5;
-  --color-82c0cc: #82c0cc;
-  --color-ede7e3: #ede7e3;
-  --color-ffa62b: #ffa62b;
-  --color-e98800: #e98800;
-  --color-ff0000: #ff0000;
-}
-
 html {
   font-family: 'mikhak';
 }
-
 body {
   background-image: url('../img/SexyBackground.png');
   background-attachment: fixed;
   background-position: center;
   -webkit-tap-highlight-color: transparent;
 }
-
 .hidden {
   display: none !important;
 }
-
 .signup-container {
   margin: 5rem 0;
   padding: 2rem;
@@ -67,7 +42,6 @@ body {
   flex-direction: column;
   gap: 1.5rem;
 }
-/* .signup-field{} */
 .signup-input {
   position: relative;
 }
@@ -91,7 +65,6 @@ body {
   border-radius: 0.5rem;
   transition: all 100ms ease-in;
 }
-
 .hide-btn {
   all: unset;
   width: 1.5rem;
@@ -106,7 +79,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
 .input-focus-fill {
   background-color: var(--color-eee);
   color: var(--color-000);
@@ -116,12 +88,10 @@ body {
   border-top: 2px solid var(--color-258cfb);
   border-radius: 1rem;
 }
-
 .signup-input_input:focus {
   border-color: var(--color-258cfb);
   outline: none;
 }
-
 .error-box {
   color: var(--color-ff0000);
 
@@ -129,7 +99,6 @@ body {
 
   padding: 1rem;
 }
-/* .error-message{} */
 .signup-btn {
   all: unset;
   background-color: var(--color-258cfb);
@@ -146,7 +115,6 @@ body {
     background-color: var(--color-007bfe);
   }
 }
-/* .login{} */
 .login-link {
   background-color: var(--color-ffa62b);
   color: var(--color-fff);
@@ -161,5 +129,27 @@ body {
   transition: all 200ms;
   &:hover {
     background-color: var(--color-e98800);
+  }
+}
+
+/* Responsive Design */
+@media (min-width: 576px) {
+  .signup-container {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .signup-container {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .signup-container {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .signup-container {
+    width: 40rem;
   }
 }
