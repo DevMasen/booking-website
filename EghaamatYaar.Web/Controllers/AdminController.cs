@@ -38,5 +38,10 @@ namespace EghaamatYaar.Web.Controllers
         {
             return View(admin);
         }
+
+        public IActionResult signIn ()
+        {
+            return View();
+        }
     }
 }
