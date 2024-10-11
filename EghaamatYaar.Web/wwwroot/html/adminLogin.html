@@ -1,3 +1,5 @@
+<!-- @{Layout = null;} -->
+
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
   <head>
@@ -72,5 +74,73 @@
     <!-- External JavaScript -->
     <script src="../js/adminLogin.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="login-container">
+      <fieldset class="login-fieldset">
+        <legend class="login-legend">ورود ادمین</legend>
+        <form class="login-form">
+          <div class="login-field">
+            <div class="login-input">
+              <input
+                class="login-input_input"
+                type="text"
+                id="admin-code"
+                maxlength="32"
+              />
+              <label class="login-input_label" for="admin-code">
+                کد ادمین
+              </label>
+            </div>
+            <div class="error-box hidden">
+              <p>
+                * خطا :
+                <span class="error-message"></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="login-field">
+            <div class="login-input">
+              <input class="login-input_input" type="text" id="user-name" />
+
+              <label class="login-input_label" for="user-name">
+                نام کاربری
+              </label>
+            </div>
+            <div class="error-box hidden">
+              <p>
+                * خطا :
+                <span class="error-message"></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="login-field">
+            <div class="login-input">
+              <input
+                class="login-input_input"
+                type="password"
+                id="password"
+                maxlength="20"
+              />
+              <label class="login-input_label" for="password"> رمز عبور </label>
+              <button class="hide-btn">
+                <img src="../icons/hide.png" alt="hide/show" />
+              </button>
+            </div>
+            <div class="error-box hidden">
+              <p>
+                * خطا :
+                <span class="error-message"></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="login">
+            <a class="login-link" href="#"> ورود </a>
+          </div>
+        </form>
+      </fieldset>
+    </div>
+  </body>
 </html>
