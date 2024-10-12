@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EghaamatYaar.Web", "EghaamatYaar.Web\EghaamatYaar.Web.csproj", "{35FB7C79-A47E-4CDB-85E0-2CC4B1EB4C1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EghaamatYaar.Web", "EghaamatYaar.Web\EghaamatYaar.Web.csproj", "{35FB7C79-A47E-4CDB-85E0-2CC4B1EB4C1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EghaamatYaar.Models", "EghaamatYaar.Models\EghaamatYaar.Models.csproj", "{FB13D299-8B2A-4FB0-9583-7AE92193EEA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EghaamatYaar.Models", "EghaamatYaar.Models\EghaamatYaar.Models.csproj", "{FB13D299-8B2A-4FB0-9583-7AE92193EEA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EghaamatYaar.DataAccess", "EghaamatYaar.DataAccess\EghaamatYaar.DataAccess.csproj", "{48140733-76AD-4689-A25A-182472010921}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EghaamatYaar.DataAccess", "EghaamatYaar.DataAccess\EghaamatYaar.DataAccess.csproj", "{48140733-76AD-4689-A25A-182472010921}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EghaamatYaar.Utility", "EghaamatYaar.Utility\EghaamatYaar.Utility.csproj", "{FC102D91-3871-4385-BFFC-77DB6FA7A4D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EghaamatYaar.Utility", "EghaamatYaar.Utility\EghaamatYaar.Utility.csproj", "{FC102D91-3871-4385-BFFC-77DB6FA7A4D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

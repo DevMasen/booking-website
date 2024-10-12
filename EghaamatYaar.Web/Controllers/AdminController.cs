@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using EghaamatYaar.DataAccess.Data;
 using EghaamatYaar.DataAccess.CodeBuilder;
 
+
 namespace EghaamatYaar.Web.Controllers
 {
     public class AdminController : Controller
@@ -22,16 +23,17 @@ namespace EghaamatYaar.Web.Controllers
         {
             if (newAdmin != null)
             {
-                bool isValid = false;
-                String code;
-                ValidationCode validation = new ValidationCode(_Context);
-                do
-                {
-                    code = AdminCodeBuilder.build();
-                    isValid = validation.isValid(code , 0);
+                //bool isValid = false;
+                //String code;
+                //ValidationCode validation = new ValidationCode(_Context);
+                //do
+                //{
+                //    code = AdminCodeBuilder.build();
+                //    isValid = validation.isValid(code , 0);
 
-                } while (isValid);
+                //} while (isValid);
 
+                string code = AdminCodeBuilder.build();
                 newAdmin.adminCode = code;
 
                 _Context.Admins.Add(newAdmin);
@@ -52,6 +54,23 @@ namespace EghaamatYaar.Web.Controllers
         {
             return View();
         }
+
+        public IActionResult Panel(AdminLoginBag bag)
+        {
+            Admin? admin = _Context.Admins.FirstOrDefault(u => u.adminCode == bag.adminCode);
+
+            if (admin != null)
+            {
+                if (admin.userName.Equals(bag.userName) && admin.password.Equals(bag.password))
+                {
+                    return View(admin);
+                }        
+            }
+
+            return RedirectToAction("_NotFound");
+        }
+
+        public IActionResult _NotFound () { return View("~/Views/Shared/_NotFound.cshtml"); }
 
 
     }

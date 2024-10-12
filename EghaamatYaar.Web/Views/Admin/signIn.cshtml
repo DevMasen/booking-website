@@ -1,4 +1,9 @@
-﻿@{Layout = null;}
+﻿@using EghaamatYaar.Models.Users;
+
+@{
+    Layout = null;
+}
+@model AdminLoginBag;
 
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
@@ -73,7 +78,10 @@
     <div class="login-container">
       <fieldset class="login-fieldset">
         <legend class="login-legend">ورود ادمین</legend>
-        <form class="login-form">
+        <form class="login-form" asp-controller="Admin" asp-action="Panel" 
+            asp-route-bag="@Model"
+           
+        >
           <div>
             <div class="login-input">
               <input
@@ -81,22 +89,28 @@
                 type="text"
                 id="admin-code"
                 maxlength="32"
+                asp-for="@Model.adminCode"
               />
               <label class="login-input_label" for="admin-code">
-                کد ادمین
+                شناسه ادمین
               </label>
             </div>
             <div class="error-box hidden">
               <p>
                 * خطا :
-                <span class="error-message"></span>
+                <span class="error-message" asp-validation-for="@Model.adminCode"></span>
               </p>
             </div>
           </div>
 
           <div>
             <div class="login-input">
-              <input class="login-input_input" type="text" id="user-name" />
+              <input 
+                  class="login-input_input" 
+                  type="text" 
+                  id="user-name"
+                  asp-for="@Model.userName" 
+                  />
 
               <label class="login-input_label" for="user-name">
                 نام کاربری
@@ -105,7 +119,7 @@
             <div class="error-box hidden">
               <p>
                 * خطا :
-                <span class="error-message"></span>
+                <span class="error-message" asp-validation-for="@Model.userName"></span>
               </p>
             </div>
           </div>
@@ -117,7 +131,8 @@
                 type="password"
                 id="password"
                 maxlength="20"
-              />
+                asp-for="@Model.password" 
+                />
               <label class="login-input_label" for="password"> رمز عبور </label>
               <button class="hide-btn">
                 <img src="~/icons/hide.png" alt="hide/show" />
@@ -126,13 +141,16 @@
             <div class="error-box hidden">
               <p>
                 * خطا :
-                <span class="error-message"></span>
+                <span class="error-message" asp-validation-for="@Model.password"></span>
               </p>
             </div>
           </div>
 
           <div>
-            <a class="login-link" href="#"> ورود </a>
+                    <!-- <a class="login-link"> ورود </a>-->
+            <button class= "login-link" type="submit">
+                ورود
+            </button>
           </div>
         </form>
       </fieldset>
