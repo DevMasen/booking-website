@@ -11,5 +11,8 @@
     "jquery"
   ],
   "author": "DevMasen",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
 }
