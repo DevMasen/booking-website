@@ -1,7 +1,7 @@
 ﻿@using EghaamatYaar.Models.Users;
 
 @{
-    Layout = null;
+    Layout = "./Shared/_AdminLayout.cshtml";
 }
 @model AdminLoginBag;
 
@@ -11,6 +11,8 @@
     <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
 
     <title>ورود ادمین | اقامت یار</title>
 
@@ -73,6 +75,7 @@
 
     <!-- External JavaScript -->
     <script src="~/js/adminLogin.js" defer></script>
+    
   </head>
   <body>
     <div class="login-container">
@@ -155,5 +158,13 @@
         </form>
       </fieldset>
     </div>
+
+
+    @section ValidationScript {
+        <partial name="_ValidationScriptsPartial" />
+    }
+
   </body>
 </html>
+
+

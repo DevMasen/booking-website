@@ -411,6 +411,7 @@
         </div>
       </div>
     </footer>
-    @await RenderSectionAsync("Scripts", required: false)
+    <!--@await RenderSectionAsync("Scripts", required: false)-->
+    @RenderSection("ValidationScript", false)
   </body>
 </html>

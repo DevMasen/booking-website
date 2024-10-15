@@ -72,6 +72,11 @@ namespace EghaamatYaar.Web.Controllers
 
         public IActionResult _NotFound () { return View("~/Views/Shared/_NotFound.cshtml"); }
 
+        public IActionResult test()
+        {
+            return View("success");
+        }
+
 
     }
 }
